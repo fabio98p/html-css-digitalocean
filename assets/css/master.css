@@ -1,4 +1,13 @@
 /* UTILITY */
+.color-white{
+	color: #fff;
+}
+.color-black{
+	color: #000;
+}
+.color-blue{
+	color: #006AFF;
+}
 .my-bold{
 	font-weight: bold;
 }
@@ -21,8 +30,7 @@ padding: 6px 15px;
 	border: 1px solid #006AFF;
 	transition: all 1s;
 	padding: 6px 15px;
-	fon
-	}
+}
 .my-btn-navbar:hover{
 	background-color: #006AFF;
 	color: #fff;
@@ -65,4 +73,82 @@ padding: 6px 15px;
 }
 .navbar-brand {
     padding	: 10px;
+}
+
+
+/* posizionamento jumbo */
+#jumbotron{
+	height: 800px;
+}
+#jumbotron .container{
+	height: 100%;
+	position: relative;
+}
+#jumbotron .container .row{
+	margin-right: 0;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+/* posizionamento jumbo */
+.bg-img-sea{
+	background-image: url(../img/bg-sea.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+/* text part */
+#jumbotron .text h1{
+	font-size: 40px;
+	font-weight: bolder;
+	margin-top: 0;
+}
+#jumbotron .text p{
+	font-size: 20px;
+}
+/* text part */
+/* card part */
+#jumbotron .card{
+	padding: 15px;
+}
+#jumbotron .card > *{
+	margin-bottom: 15px ;
+}
+#jumbotron .card h2{
+	font-weight: bold;
+}
+#jumbotron button{
+	width: 100%;
+}
+#jumbotron .card{
+	background-color: #fff;
+	border-radius: 5px;
+}
+/* card part */
+@media all and (min-width: 992px){
+	/* posizionamento jumbo */
+	#jumbotron .container .row{
+		height: 100%;
+		position: relative;
+		top: 0;
+		transform: translate(0, 0);
+	}
+	
+	#jumbotron .container .row > *{
+		height: 100%;
+	}
+	#jumbotron .text, #jumbotron .card{
+		position: absolute;
+		top: 50%;
+		transform: translate(0, -50%);
+	}
+	/* posizionamento jumbo */
+	/* text part */
+	#jumbotron .text h1{
+		font-size: 50px;
+	}
+	#jumbotron .text p{
+		font-size: 25px;
+	}
+	/* text part */
 }
