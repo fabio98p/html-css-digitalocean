@@ -1,0 +1,36 @@
+/* modifiche boostrap navbar */
+@media all and (min-width: 768px){
+	.navbar-toggle {
+		display: block;
+	}
+	.navbar-header {
+		float: none;
+	}
+	.navbar-collapse.collapse {
+		display: none!important;
+		overflow: visible!important;
+	}
+}
+
+@media all and (min-width: 992px){
+	.navbar-toggle {
+		display: none;
+	}
+	.navbar-header {
+		float: left;
+	}
+	.navbar-collapse.collapse {
+		display: block!important;
+		overflow: visible!important;
+	}
+}
+/* modifiche boostrap navbar */
+.my-navbar-right{
+	float: right;
+}
+.navbar-header img{
+	height: 30px;
+}
+.navbar-brand {
+    padding	: 10px;
+}
