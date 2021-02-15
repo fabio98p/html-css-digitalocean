@@ -1,3 +1,35 @@
+/* UTILITY */
+.my-bold{
+	font-weight: bold;
+}
+/* button */
+.my-btn-navbar-light{
+background-color: #fff;
+color: #000;
+border: none;
+transition: all 1s;
+padding: 6px 15px;
+}
+.my-btn-navbar-light:hover{
+	background-color: #006AFF;
+	color: #fff;
+}
+
+.my-btn-navbar{
+	background-color: #fff;
+	color: #006AFF;
+	border: 1px solid #006AFF;
+	transition: all 1s;
+	padding: 6px 15px;
+	fon
+	}
+.my-btn-navbar:hover{
+	background-color: #006AFF;
+	color: #fff;
+}
+
+/* button */
+/* UTILITY */
 /* modifiche boostrap navbar */
 @media all and (min-width: 768px){
 	.navbar-toggle {
