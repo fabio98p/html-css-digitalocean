@@ -1,45 +1,83 @@
 /* UTILITY */
-.color-white{
+
+.color-white {
 	color: #fff;
 }
-.color-black{
+
+.color-black {
 	color: #000;
 }
-.color-blue{
+
+.color-blue {
 	color: #006AFF;
 }
-.my-bold{
+
+.color-darkblue {
+	color: #031C4E;
+}
+
+.color-grey {
+	color: #75809A;
+}
+
+.bg-lightgrey {
+	background-color: #F3F5F9;
+}
+
+.bg-white {
+	background-color: #fff;
+}
+
+.bg-img-sea {
+	background-image: url(../img/bg-sea.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.my-bold {
 	font-weight: bold;
 }
+
+
 /* button */
-.my-btn-navbar-light{
-background-color: #fff;
-color: #000;
-border: none;
-transition: all 1s;
-padding: 6px 15px;
+
+.my-btn-navbar-light {
+	background-color: #fff;
+	color: #000;
+	border: none;
+	transition: all 1s;
+	padding: 6px 15px;
 }
-.my-btn-navbar-light:hover{
+
+.my-btn-navbar-light:hover {
 	background-color: #006AFF;
 	color: #fff;
 }
 
-.my-btn-navbar{
+.my-btn-navbar {
 	background-color: #fff;
 	color: #006AFF;
 	border: 1px solid #006AFF;
 	transition: all 1s;
 	padding: 6px 15px;
 }
-.my-btn-navbar:hover{
+
+.my-btn-navbar:hover {
 	background-color: #006AFF;
 	color: #fff;
 }
 
+
 /* button */
+
+
 /* UTILITY */
+
+
 /* modifiche boostrap navbar */
-@media all and (min-width: 768px){
+
+@media all and (min-width: 768px) {
 	.navbar-toggle {
 		display: block;
 	}
@@ -52,7 +90,7 @@ padding: 6px 15px;
 	}
 }
 
-@media all and (min-width: 992px){
+@media all and (min-width: 992px) {
 	.navbar-toggle {
 		display: none;
 	}
@@ -64,100 +102,129 @@ padding: 6px 15px;
 		overflow: visible!important;
 	}
 }
+
+
 /* modifiche boostrap navbar */
-.my-navbar-right{
+
+.my-navbar-right {
 	float: right;
 }
-.navbar-header img{
+
+.navbar-header img {
 	height: 30px;
 }
+
 .navbar-brand {
-    padding	: 10px;
+	padding: 10px;
 }
 
+
 /* JUMBOTRON */
+
+
 /* posizionamento jumbo */
-#jumbotron{
+
+#jumbotron {
 	height: 800px;
 }
-#jumbotron .container{
+
+#jumbotron .container {
 	height: 100%;
 	position: relative;
 }
-#jumbotron .container .row{
+
+#jumbotron .container .row {
 	margin-right: 0;
 	position: absolute;
 	top: 50%;
 	transform: translate(0, -50%);
 }
+
+
 /* posizionamento jumbo */
-.bg-img-sea{
-	background-image: url(../img/bg-sea.svg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center;
-}
+
+
 /* text part */
-#jumbotron .text h1{
+
+#jumbotron .text h1 {
 	font-size: 40px;
 	font-weight: bolder;
 	margin-top: 0;
 }
-#jumbotron .text p{
+
+#jumbotron .text p {
 	font-size: 20px;
 }
+
+
 /* text part */
+
+
 /* card part */
-#jumbotron .card{
+
+#jumbotron .card {
 	padding: 15px;
 }
-#jumbotron .card > *{
-	margin-bottom: 15px ;
+
+#jumbotron .card>* {
+	margin-bottom: 15px;
 }
-#jumbotron .card h2{
+
+#jumbotron .card h2 {
 	font-weight: bold;
 }
-#jumbotron button{
+
+#jumbotron button {
 	width: 100%;
 }
-#jumbotron .card{
+
+#jumbotron .card {
 	background-color: #fff;
 	border-radius: 5px;
 }
+
+
 /* card part */
-@media all and (min-width: 992px){
+
+@media all and (min-width: 992px) {
 	/* posizionamento jumbo */
-	#jumbotron .container .row{
+	#jumbotron .container .row {
 		height: 100%;
 		position: relative;
 		top: 0;
 		transform: translate(0, 0);
 	}
-	
-	#jumbotron .container .row > *{
+	#jumbotron .container .row>* {
 		height: 100%;
 	}
-	#jumbotron .text, #jumbotron .card{
+	#jumbotron .text,
+	#jumbotron .card {
 		position: absolute;
 		top: 50%;
 		transform: translate(0, -50%);
 	}
 	/* posizionamento jumbo */
 	/* text part */
-	#jumbotron .text h1{
+	#jumbotron .text h1 {
 		font-size: 50px;
 	}
-	#jumbotron .text p{
+	#jumbotron .text p {
 		font-size: 25px;
 	}
 	/* text part */
 }
+
+
 /* JUMBOTRON */
+
+
 /* logs */
-#logs{
+
+#logs {
 	text-align: center;
 }
-#logs img{
+
+#logs img {
 	width: 100%;
 	max-width: 150px;
 	position: absolute;
@@ -165,23 +232,67 @@ padding: 6px 15px;
 	left: 50%;
 	transform: translate(-50%, -50%);
 }
-#logs .col-sm-2{
+
+#logs .col-sm-2 {
 	height: 100px;
 	margin-bottom: 30px;
 }
-#logs p{
+
+#logs p {
 	font-size: 18px;
 	color: grey;
 	text-transform: uppercase;
 	margin: 20px 0;
 }
-#logs span{
+
+#logs span {
 	font-size: 18px;
 	color: #006AFF;
 }
-@media all and (min-width: 769px) and (max-width: 992px){
-	#logs img{
-		max-width: 100px;;
+
+@media all and (min-width: 769px) and (max-width: 992px) {
+	#logs img {
+		max-width: 100px;
+		;
 	}
 }
-/* logs */
+
+
+/* LOGS */
+
+
+/* DEPLOY */
+
+#deploy {
+	padding: 50px 0;
+}
+/* title */
+#deploy .title{
+	margin-bottom: 30px;
+}
+
+#deploy .title h2 {
+	font-weight: bold;
+}
+
+#deploy .title p {
+	font-size: 20px;
+}
+/* title */
+/* selection */
+#deploy .selection .selector{
+	font-size: 20px;
+	padding: 10px 30px;
+	margin: 0;
+	border-left: 2px solid #75809A;
+	color: gray;
+}
+#deploy .selection .selector:hover{
+	border-left: 2px solid #006AFF;
+
+}
+/* selection */
+/* cards */
+
+/* cards */
+/* DEPLOY */
