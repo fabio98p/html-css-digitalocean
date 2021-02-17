@@ -38,6 +38,7 @@
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
+						<!-- todo: i dropdown hanno un estetica diversa rispetto all'originale, provare a modificarla -->
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Productors <span class="caret"></span></a>
 						</li>
@@ -127,55 +128,173 @@
 		<!-- todo: controllare il background color che sia messo bene che dallo schermo principale non si nota lo stacco -->
 		<div id="deploy" class="bg-white">
 			<div class="container">
-				<div class="title text-center">
-					<div class="row">
-						<div class="col-xs-12">
-							<h2 class="color-darkblue">Deploy and scale seamlessly</h2>
-							<p class="color-grey">Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="title">
+							<!-- todo: si puo tentare di unificare i css di questo titolo ed i successivi. -->
+							<h2>Deploy and scale seamlessly</h2>
+							<p>Our optimized configuration process saves your team time when running and scaling distributed applications, AI & machine learning workloads, hosted services, client websites, or CI/CD environments.</p>
 						</div>
-					</div>
-				</div>
-				<div class="selection">
-					<div class="row">
-						<!-- todo: mettere i link per fare il focus come sulla pagina originale invece dell'hover -->
-						<div class="col-xs-12">
-							<div class="selector">Deploy</div>
-						</div>
-						<div class="col-xs-12">
-							<div class="selector">Manage</div>
-						</div>
-						<div class="col-xs-12">
-							<div class="selector">Secure</div>
-						</div>
-						<div class="col-xs-12">
-							<div class="selector"> Scale</div>
-						</div>
-						<div class="col-xs-12">
-							<div class="selector"> Monitor</div>
-						</div>
-					</div>
-				</div>
-				<div class="cards">
-					<div class="row">
-						<div class="col-xs-12">
-							<div class="card">
-								<img src="./assets/img/goccia.svg" alt="">
-								<h4>Cluster deployments</h4>
-								<p>Provision multiple droplets (virtual machines) in second with our control panel, CLI, or directly against our API</p>
+						<div class="row">
+							<div class="col-xs-12 col-sm-4">
+								<div class="selection">
+									<div class="row">
+										<!-- todo: mettere i link per fare il focus come sulla pagina originale invece dell'hover certcare targhet -->
+										<div class="col-xs-12">
+											<div class="selector">Deploy</div>
+										</div>
+										<div class="col-xs-12">
+											<div class="selector">Manage</div>
+										</div>
+										<div class="col-xs-12">
+											<div class="selector">Secure</div>
+										</div>
+										<div class="col-xs-12">
+											<div class="selector"> Scale</div>
+										</div>
+										<div class="col-xs-12">
+											<div class="selector"> Monitor</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-xs-12 col-sm-8">
+								<div class="cards">
+									<div class="row">
+										<!-- todo: se ho voglia faccio ancge la cosa uguale identica allo screen invece che prenderla dal sito, cio comporta il modificare le immagini creandone di nuove -->
+										<div class="col-xs-12 col-sm-6">
+											<div class="card">
+												<img src="./assets/img/volante.svg" alt="">
+												<h4 class="color-darkblue">Kubernetes in minutes</h4>
+												<p class="color-grey">Spin up a managed Kubernetes cluster in just a few clicks. Simply specify the size and location of your worker nodes.</p>
+											</div>
+										</div>
+										<div class="col-xs-12 col-sm-6">
+											<div class="card">
+												<img src="./assets/img/goccia.svg" alt="">
+												<h4 class="color-darkblue">Flexible compute types</h4>
+												<p class="color-grey">With Basic, General Purpose, CPU-Optimized or Memory-Optimized Droplets, you can choose the right infrastructure for your workload.</p>
+											</div>						</div>
+										<div class="col-xs-12 col-sm-6">
+											<div class="card">
+												<img src="./assets/img/submarin.svg" alt="">
+												<h4 class="color-darkblue">App Platform</h4>
+												<p class="color-grey">Build, deploy, and scale apps quickly using a simple, fully managed solution. We’ll handle the infrastructure, app runtimes, and dependencies, so that you can push code to production in just a few clicks.</p>
+											</div>						</div>
+										<div class="col-xs-12 col-sm-6">
+											<div class="card">
+												<img src="./assets/img/card.svg" alt="">
+												<h4 class="color-darkblue">1-Click App Marketplace</h4>
+												<p class="color-grey">Quickly deploy projects using one of our preconfigured 1-Click Apps, like LAMP, Docker, and WordPress.</p>
+											</div>
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
-						<div class="col-xs-12">
-							<div class="card"></div>
-						</div>
-						<div class="col-xs-12">
-							<div class="card"></div>
-						</div>
-						<div class="col-xs-12">
-							<div class="card"></div>
-
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="designed">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="title">
+							<h2>Designed for developper</h2>
+							<p>Build more and spend less time managing your infrastructure with our easy-to-usw control panel and API</p>
 						</div>
 					</div>
 				</div>
+				<div class="row">
+					<div class="col-xs-0 col-sm-2"><span>Left</span></div>
+					<div class="col-xs-12 col-sm-8">
+						<img src="./assets/img/page.jpg" alt="">
+					</div>
+					<div class="col-xs-0 col-sm-2"><span>Right</span></div>
+				</div>
+				<div class="row"></div>
+			</div>
+		</div>
+		<div id="features">
+			<div class="cards">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="title">
+							<h2 class="text-center">The feature your biosness needs</h2>
+						</div>
+					</div>
+					<!-- todo: se ho voglia faccio ancge la cosa uguale identica allo screen invece che prenderla dal sito, cio comporta il modificare le immagini creandone di nuove -->
+					<div class="col-xs-12 col-sm-4">
+						<div class="card">
+							<img src="./assets/img/volante.svg" alt="">
+							<h4 class="color-darkblue">Kubernetes in minutes</h4>
+							<p class="color-grey">Spin up a managed Kubernetes cluster in just a few clicks. Simply specify the size and location of your worker nodes.</p>
+							<a href="#">Pircing ></a>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<div class="card">
+							<img src="./assets/img/goccia.svg" alt="">
+							<h4 class="color-darkblue">Flexible compute types</h4>
+							<p class="color-grey">With Basic, General Purpose, CPU-Optimized or Memory-Optimized Droplets, you can choose the right infrastructure for your workload.</p>
+							<a href="#">Pircing ></a>
+						</div>	
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<div class="card">
+							<img src="./assets/img/submarin.svg" alt="">
+							<h4 class="color-darkblue">App Platform</h4>
+							<p class="color-grey">Build, deploy, and scale apps quickly using a simple, fully managed solution. We’ll handle the infrastructure, app runtimes, and dependencies, so that you can push code to production in just a few clicks.</p>
+							<a href="#">Pircing ></a>
+						</div>						
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="service">
+			<div class="containre">
+				<div class="row">
+					<div class="title">
+						<h2 class="color-white">Service your costomers around the world from 12 region.</h2>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="row">
+							<div class="col-xs-2"><span class="acronimo">ams2</span></div>
+							<div class="col-xs-6"><p class="location">Amsterdam, Netherland</p></div>
+							<div class="col-xs-4"><a class="test" href="#">Test Speed ></a></div>
+						</div>
+						<div class="row">
+							<div class="col-xs-2"><span class="acronimo">ams3</span></div>
+							<div class="col-xs-6"><p class="location">Amsterdam, Netherland</p></div>
+							<div class="col-xs-4"><a class="test" href="#">Test Speed ></a></div>
+						</div>
+						<div class="row">
+							<div class="col-xs-2"><span class="acronimo">blr1</span></div>
+							<div class="col-xs-6"><p class="location">Bangalore, India</p></div>
+							<div class="col-xs-4"><a class="test" href="#">Test Speed ></a></div>
+						</div>
+						<div class="row">
+							<div class="col-xs-2"><span class="acronimo">fra1</span></div>
+							<div class="col-xs-6"><p class="location">Frankfurt, German</p></div>
+							<div class="col-xs-4"><a class="test" href="#">Test Speed ></a></div>
+						</div>
+						<div class="row">
+							<div class="col-xs-2"><span class="acronimo">lon1</span></div>
+							<div class="col-xs-6"><p class="location">London, UK</p></div>
+							<div class="col-xs-4"><a class="test" href="#">Test Speed ></a></div>
+						</div>
+						<div class="row">
+							<div class="col-xs-2"><span class="acronimo">nyc1</span></div>
+							<div class="col-xs-6"><p class="location">New York, USA</p></div>
+							<div class="col-xs-4"><a class="test" href="#">Test Speed ></a></div>
+						</div>
+
+					</div>
+				</div>
+				<div class="row"></div>
 			</div>
 		</div>
 	</main>

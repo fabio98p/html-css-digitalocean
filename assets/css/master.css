@@ -67,11 +67,41 @@
 	background-color: #006AFF;
 	color: #fff;
 }
-
-
 /* button */
+/* title */
+.title{
+	margin-bottom: 30px;
+	text-align: center;
+	color: #031C4E;
+}
 
+.title h2 {
+	font-weight: bold;
+}
 
+.title p {
+	font-size: 20px;
+	color: #75809A;
+}
+/* title */
+
+/* cards */
+.cards .card{
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.cards .card img{
+	margin-bottom: 10px;
+	height: 40px;
+}
+.cards .card h4{
+	font-weight: bold;
+	font-size: 20px;
+}
+.cards .card p{
+	font-size: 18px;
+}
+/* cards */
 /* UTILITY */
 
 
@@ -264,7 +294,7 @@
 /* DEPLOY */
 
 #deploy {
-	padding: 50px 0;
+	padding: 50px 20px;
 }
 /* title */
 #deploy .title{
@@ -280,19 +310,42 @@
 }
 /* title */
 /* selection */
+#deploy .selection{
+	margin: 30px 0;
+}
 #deploy .selection .selector{
 	font-size: 20px;
 	padding: 10px 30px;
-	margin: 0;
-	border-left: 2px solid #75809A;
+	margin-left: 0px;
+	border-left: 2px solid #e5e1e1;
 	color: gray;
 }
 #deploy .selection .selector:hover{
 	border-left: 2px solid #006AFF;
-
 }
 /* selection */
-/* cards */
-
-/* cards */
 /* DEPLOY */
+/* DESIGNED */
+/* da sistemare il left e il right che non so perche non prendono l'altezza che dovrebbero avere */
+#designed img{
+	width: 100%;
+}
+#designed .col-sm-2{
+	height: 100%;
+	display: inline-block;
+}
+#designed span{
+	display: inline-block;
+	font-size: 40px;
+	font-weight: bold;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+/* DESIGNED */
+/* FEATURE */
+#features {
+	padding: 50px 20px;
+}
+/* FEATURE */
