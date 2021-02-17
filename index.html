@@ -19,6 +19,7 @@
 	<header>
 		<!-- todo: controllare i media della navbar se possono essere sistemati -->
 		<!-- controllare tutto del menu che scende -->
+		<!-- todo: controllare perche non scende la navbar -->
 		<nav class="navbar navbar-default .navbar-fixed-top my-bold">
 			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
@@ -77,7 +78,7 @@
 						</div>
 					</div>
 					<div class="col-xs-12 col-md-5">
-						<div class="card text-center">
+						<div class="box text-center">
 							<h2 class="color-black">Deploy your app in seconds.</h2>
 							<h2 class="color-blue">Get started now.</h2>
 							<input type="email" class="form-control" placeholder="Email" aria-describedby="basic-addon1">
@@ -196,7 +197,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="designed">
+		<div id="designed" class="bg-lightgrey">
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
@@ -207,94 +208,184 @@
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-xs-0 col-sm-2"><span>Left</span></div>
-					<div class="col-xs-12 col-sm-8">
-						<img src="./assets/img/page.jpg" alt="">
+					<div class="col-xs-12">
+						<div class="scroll-box">
+							<i class="freccina left color-grey fas fa-chevron-left"></i>
+							<div class="page">
+								<img src="./assets/img/page.jpg" alt="">
+							</div>
+							<i class="freccina right color-grey fas fa-chevron-right"></i>
+						</div>
 					</div>
-					<div class="col-xs-0 col-sm-2"><span>Right</span></div>
 				</div>
-				<div class="row"></div>
+				<div class="row">
+					<div class="col-xs-4 col-xs-offset-4">
+						<ul class="point">
+							<li class="active"></li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div id="features">
-			<div class="cards">
-				<div class="row">
-					<div class="col-xs-12">
-						<div class="title">
-							<h2 class="text-center">The feature your biosness needs</h2>
+			<div class="container">
+				<div class="cards">
+					<div class="row">
+						<div class="col-xs-12">
+							<div class="title">
+								<h2 class="text-center">The feature your biosness needs</h2>
+							</div>
 						</div>
-					</div>
-					<!-- todo: se ho voglia faccio ancge la cosa uguale identica allo screen invece che prenderla dal sito, cio comporta il modificare le immagini creandone di nuove -->
-					<div class="col-xs-12 col-sm-4">
-						<div class="card">
-							<img src="./assets/img/volante.svg" alt="">
-							<h4 class="color-darkblue">Kubernetes in minutes</h4>
-							<p class="color-grey">Spin up a managed Kubernetes cluster in just a few clicks. Simply specify the size and location of your worker nodes.</p>
-							<a href="#">Pircing ></a>
+						<!-- todo: se ho voglia faccio ancge la cosa uguale identica allo screen invece che prenderla dal sito, cio comporta il modificare le immagini creandone di nuove -->
+						<div class="col-xs-12 col-sm-4">
+							<div class="card">
+								<img src="./assets/img/volante.svg" alt="">
+								<h4 class="color-darkblue">Kubernetes in minutes</h4>
+								<p class="color-grey">Spin up a managed Kubernetes cluster in just a few clicks. Simply specify the size and location of your worker nodes.</p>
+								<a href="#">Pircing ></a>
+							</div>
 						</div>
-					</div>
-					<div class="col-xs-12 col-sm-4">
-						<div class="card">
-							<img src="./assets/img/goccia.svg" alt="">
-							<h4 class="color-darkblue">Flexible compute types</h4>
-							<p class="color-grey">With Basic, General Purpose, CPU-Optimized or Memory-Optimized Droplets, you can choose the right infrastructure for your workload.</p>
-							<a href="#">Pircing ></a>
-						</div>	
-					</div>
-					<div class="col-xs-12 col-sm-4">
-						<div class="card">
-							<img src="./assets/img/submarin.svg" alt="">
-							<h4 class="color-darkblue">App Platform</h4>
-							<p class="color-grey">Build, deploy, and scale apps quickly using a simple, fully managed solution. We’ll handle the infrastructure, app runtimes, and dependencies, so that you can push code to production in just a few clicks.</p>
-							<a href="#">Pircing ></a>
-						</div>						
+						<div class="col-xs-12 col-sm-4">
+							<div class="card">
+								<img src="./assets/img/goccia.svg" alt="">
+								<h4 class="color-darkblue">Flexible compute types</h4>
+								<p class="color-grey">With Basic, General Purpose, CPU-Optimized or Memory-Optimized Droplets, you can choose the right infrastructure for your workload.</p>
+								<a href="#">Pircing ></a>
+							</div>	
+						</div>
+						<div class="col-xs-12 col-sm-4">
+							<div class="card">
+								<img src="./assets/img/submarin.svg" alt="">
+								<h4 class="color-darkblue">App Platform</h4>
+								<p class="color-grey">Build, deploy, and scale apps quickly using a simple, fully managed solution. We’ll handle the infrastructure, app runtimes, and dependencies, so that you can push code to production in just a few clicks.</p>
+								<a href="#">Pircing ></a>
+							</div>						
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 		<div id="service">
-			<div class="containre">
+			<div class="container">
 				<div class="row">
 					<div class="title">
 						<h2 class="color-white">Service your costomers around the world from 12 region.</h2>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-12">
-						<div class="row">
-							<div class="col-xs-2"><span class="acronimo">ams2</span></div>
-							<div class="col-xs-6"><p class="location">Amsterdam, Netherland</p></div>
-							<div class="col-xs-4"><a class="test" href="#">Test Speed ></a></div>
+					<div class="col-sm-12 col-md-5 col-md-offset-1 col-lg-6 col-lg-offset-0">
+						<div class="screen-1">
+							<div class="row">
+								<div class="col-xs-2"><span class="acronimo">ams2</span></div>
+								<div class="col-xs-6"><p class="location">Amsterdam, Netherland</p></div>
+								<div class="col-xs-4"><a class="test" href="#">Test Speed ></a></div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-xs-2"><span class="acronimo">ams3</span></div>
+								<div class="col-xs-6"><p class="location">Amsterdam, Netherland</p></div>
+								<div class="col-xs-4"><a class="test" href="#">Test Speed ></a></div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-xs-2"><span class="acronimo">blr1</span></div>
+								<div class="col-xs-6"><p class="location">Bangalore, India</p></div>
+								<div class="col-xs-4"><a class="test" href="#">Test Speed ></a></div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-xs-2"><span class="acronimo">fra1</span></div>
+								<div class="col-xs-6"><p class="location">Frankfurt, German</p></div>
+								<div class="col-xs-4"><a class="test" href="#">Test Speed ></a></div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-xs-2"><span class="acronimo">lon1</span></div>
+								<div class="col-xs-6"><p class="location">London, UK</p></div>
+								<div class="col-xs-4"><a class="test" href="#">Test Speed ></a></div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-xs-2"><span class="acronimo">nyc1</span></div>
+								<div class="col-xs-6"><p class="location">New York, USA</p></div>
+								<div class="col-xs-4"><a class="test" href="#">Test Speed ></a></div>
+							</div>
 						</div>
-						<div class="row">
-							<div class="col-xs-2"><span class="acronimo">ams3</span></div>
-							<div class="col-xs-6"><p class="location">Amsterdam, Netherland</p></div>
-							<div class="col-xs-4"><a class="test" href="#">Test Speed ></a></div>
+					</div>
+					<div class="col-sm-12 col-md-5 col-lg-6">
+						<div class="screen-2">							
+							<div class="row">
+								<div class="col-xs-2"><span class="acronimo">ams2</span></div>
+								<div class="col-xs-6"><p class="location">Amsterdam, Netherland</p></div>
+								<div class="col-xs-4"><a class="test" href="#">Test Speed ></a></div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-xs-2"><span class="acronimo">ams3</span></div>
+								<div class="col-xs-6"><p class="location">Amsterdam, Netherland</p></div>
+								<div class="col-xs-4"><a class="test" href="#">Test Speed ></a></div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-xs-2"><span class="acronimo">blr1</span></div>
+								<div class="col-xs-6"><p class="location">Bangalore, India</p></div>
+								<div class="col-xs-4"><a class="test" href="#">Test Speed ></a></div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-xs-2"><span class="acronimo">fra1</span></div>
+								<div class="col-xs-6"><p class="location">Frankfurt, German</p></div>
+								<div class="col-xs-4"><a class="test" href="#">Test Speed ></a></div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-xs-2"><span class="acronimo">lon1</span></div>
+								<div class="col-xs-6"><p class="location">London, UK</p></div>
+								<div class="col-xs-4"><a class="test" href="#">Test Speed ></a></div>
+							</div>
+							<hr>
+							<div class="row">
+								<div class="col-xs-2"><span class="acronimo">nyc1</span></div>
+								<div class="col-xs-6"><p class="location">New York, USA</p></div>
+								<div class="col-xs-4"><a class="test" href="#">Test Speed ></a></div>
+							</div>
 						</div>
-						<div class="row">
-							<div class="col-xs-2"><span class="acronimo">blr1</span></div>
-							<div class="col-xs-6"><p class="location">Bangalore, India</p></div>
-							<div class="col-xs-4"><a class="test" href="#">Test Speed ></a></div>
-						</div>
-						<div class="row">
-							<div class="col-xs-2"><span class="acronimo">fra1</span></div>
-							<div class="col-xs-6"><p class="location">Frankfurt, German</p></div>
-							<div class="col-xs-4"><a class="test" href="#">Test Speed ></a></div>
-						</div>
-						<div class="row">
-							<div class="col-xs-2"><span class="acronimo">lon1</span></div>
-							<div class="col-xs-6"><p class="location">London, UK</p></div>
-							<div class="col-xs-4"><a class="test" href="#">Test Speed ></a></div>
-						</div>
-						<div class="row">
-							<div class="col-xs-2"><span class="acronimo">nyc1</span></div>
-							<div class="col-xs-6"><p class="location">New York, USA</p></div>
-							<div class="col-xs-4"><a class="test" href="#">Test Speed ></a></div>
-						</div>
-
 					</div>
 				</div>
-				<div class="row"></div>
+			</div>
+		</div>
+		<div id="development">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="title">
+							<h2>Development team love DigitalOcean</h2>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="scroll-box">
+							<i class="freccina left color-grey fas fa-chevron-left"></i>
+							<div class="page">
+								<img src="./assets/img/page.jpg" alt="">
+							</div>
+							<i class="freccina right color-grey fas fa-chevron-right"></i>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-4 col-xs-offset-4">
+						<ul class="point">
+							<li class="active"></li>
+							<li></li>
+							<li></li>
+						</ul>
+					</div>
+				</div>
 			</div>
 		</div>
 	</main>

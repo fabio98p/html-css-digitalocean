@@ -41,7 +41,6 @@
 
 
 /* button */
-
 .my-btn-navbar-light {
 	background-color: #fff;
 	color: #000;
@@ -68,6 +67,7 @@
 	color: #fff;
 }
 /* button */
+
 /* title */
 .title{
 	margin-bottom: 30px;
@@ -102,6 +102,54 @@
 	font-size: 18px;
 }
 /* cards */
+
+/* point */
+ul.point{
+	margin: 50px 0;
+	font-size: 0;
+	padding: 0;
+	text-align: center;
+}
+ul.point li:hover, ul.point .active{
+	background-color: #006AFF;
+}
+.point li{
+	display: inline-block;
+	border: 1px solid #006AFF;
+	border-radius: 50%;
+	margin: 0 10px;
+	padding: 7px;
+}
+/* point */
+
+/* scroll page */
+.scroll-box .page{
+	width: 100%;
+}
+.scroll-box .freccina{
+	display: none;
+	font-size: 50px;
+	position: absolute;
+	top: 50%;
+	transform: translate(0, -50%);
+}
+.scroll-box .left{
+	left: 0;
+}
+.scroll-box .right{
+	right: 0;
+}
+@media all and (min-width: 769px){
+	.scroll-box .freccina{
+		display: block;
+	}
+	.scroll-box .page{
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+/* scroll page */
+
 /* UTILITY */
 
 
@@ -191,16 +239,15 @@
 
 
 /* card part */
-
-#jumbotron .card {
+#jumbotron .box {
 	padding: 15px;
 }
 
-#jumbotron .card>* {
+#jumbotron .box>* {
 	margin-bottom: 15px;
 }
 
-#jumbotron .card h2 {
+#jumbotron .box h2 {
 	font-weight: bold;
 }
 
@@ -208,12 +255,10 @@
 	width: 100%;
 }
 
-#jumbotron .card {
+#jumbotron .box {
 	background-color: #fff;
 	border-radius: 5px;
 }
-
-
 /* card part */
 
 @media all and (min-width: 992px) {
@@ -228,7 +273,7 @@
 		height: 100%;
 	}
 	#jumbotron .text,
-	#jumbotron .card {
+	#jumbotron .box {
 		position: absolute;
 		top: 50%;
 		transform: translate(0, -50%);
@@ -286,8 +331,6 @@
 		;
 	}
 }
-
-
 /* LOGS */
 
 
@@ -327,25 +370,48 @@
 /* DEPLOY */
 /* DESIGNED */
 /* da sistemare il left e il right che non so perche non prendono l'altezza che dovrebbero avere */
-#designed img{
+#designed .page img{
 	width: 100%;
 }
-#designed .col-sm-2{
-	height: 100%;
-	display: inline-block;
-}
-#designed span{
-	display: inline-block;
-	font-size: 40px;
-	font-weight: bold;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
+
 /* DESIGNED */
 /* FEATURE */
 #features {
 	padding: 50px 20px;
 }
 /* FEATURE */
+/* SERVICE */
+
+#service{
+	padding: 70px 10px;
+	background-color: #031B4E;
+	background-image: url(../img/bg-map.svg);
+	background-size: cover;
+	background-position: center;
+}
+#service .screen-1{
+	margin-bottom: 40px;
+}
+#service hr{
+	margin: 10px 0;
+}
+#service span{
+	text-transform: uppercase;
+	font-weight: bolder;
+	color: #fff;
+}
+#service p{
+	color: #75809A;
+	font-weight: bold;
+	margin: 0;
+}
+#service a{
+	color: #00D7D2;
+	float: right;
+}
+/* SERVICE */
+/* DEVELOPMENT */
+#development{
+
+}
+/* DEVELOPMENT */
