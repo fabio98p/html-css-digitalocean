@@ -194,7 +194,10 @@ ul.point li:hover, ul.point .active{
 
 
 /* modifiche boostrap navbar */
+.my-navbar{
+  box-shadow: 0 1px #888888;
 
+}
 .my-navbar-right {
 	float: right;
 }
@@ -500,3 +503,61 @@ footer .link li a:hover{
 	color: #fff;
 }
 /* FOOTER*/
+
+/* SHARK */
+#shark{
+	background-color: transparent;
+}
+#shark .shark-img{
+	position: relative;
+	display: inline-block;
+	margin-bottom: 15px;
+}
+#shark .shark-img img{
+	border-radius: 10px;
+
+	height: 60px;
+}
+#shark .shark-img .notification{
+	color: white;
+	padding: 5px 10px;
+	background-color: red;
+	border: 5px solid white;
+	border-radius: 50%;
+	position: absolute;
+	top: -10px;
+	right: -15px;
+}
+#shark .baloon{
+}
+#shark .baloon .rettangolo{
+	filter:drop-shadow(3px 3px 4px black);
+	display: inline-block;
+	position: relative;
+	border-radius: 10px;
+	display: inline-block;
+	height: 60px;
+	width: 100%;
+	min-width: 200px;
+	background-color: white;
+	color: black;
+	margin-bottom: 15px;
+}
+#shark .baloon .rettangolo span{
+	padding-left: 10px;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#shark .baloon .triangle{
+	height: 10px;
+	width: 10px;
+	transform: rotate(45deg);
+	background-color: white;
+	position: absolute;
+	top: 40px;
+	right: -5px;
+}
+/* SHARK */	
