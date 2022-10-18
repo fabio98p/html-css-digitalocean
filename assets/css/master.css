@@ -161,6 +161,10 @@ ul.point li:hover, ul.point .active{
 }
 /* scroll page */
 
+.pointer{
+    cursor: pointer;
+}
+
 /* UTILITY */
 
 
